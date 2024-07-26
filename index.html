@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col text-center mb-5">   
+                <h1>Tech Solutions</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 26rem;">
+                    <img src="/images/cyber_security.jpg" class="card-img-top" alt="Cyber Security">
+                    <div class="card-body">
+                      <h5 class="card-title">Cyber Security</h5>
+                      <p class="card-text">Our cyber security services provide protection for digital assets and infrastructure from cyber threats through solutions such as threat detection, incident response, and risk management.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 26em">
+                    <img src="/images/hardware.jpg" class="card-img-top" alt="Hardware">
+                    <div class="card-body">
+                      <h5 class="card-title">Hardware</h5>
+                      <p class="card-text">Our hardware services encompass the procurement, installation, maintenance, and repair of physical computer components and devices, ensuring optimal performance and longevity.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 26rem;">
+                    <img src="/images/network.jpg" class="card-img-top" alt="Network">
+                    <div class="card-body">
+                      <h5 class="card-title">Network</h5>
+                      <p class="card-text">Our network services involve the design, implementation, management, and support of network infrastructure to ensure reliable and secure connectivity and data exchange across various devices and locations</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-8">
+                <h2>About Us</h2>
+                <p>Tech Solutions is a leading provider of IT services dedicate to delivering innovative an reliable solution to our clients.</p>
+                <p> Founded in 2020, we have grown into a trust partner for small to medium sized businesses.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <h2>Sidebar</h2>
+                    <p>If you sign up for two services in the next week, you're eliglibe for a 20% discount!</p>
+                    <p>If you sign up for three services in the next week, you're eliglibe for a 30% discount!</p> <p>Take advantage now and don't let this deal pass you by!</p>
+                    <img src="/images/sale.jpg" alt="Discount" class="img-fluid" style="width:100%; height:auto">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            </div class="row">
+                <div class="col-6" style="text-left">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="mb-3 form-text">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-2">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email">
+                        </div>
+                        <label for="services" class="form-label">Choose service(s)</label>
+                        <div class="mb-3">
+                            <select class="form-select" multiple>
+                                <option selected></option>
+                                <option value="1">Cyber Security</option>
+                                <option value="2">Hardware</option>
+                                <option value="3">Network</option>
+                            </select>
+                        </div>
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" style="height:140px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-5">Submit</button>
+                    </form>
+                </div>
+            </div>    
+        </div> 
+        <div class="container vh-80">
+            <div class="row h-80">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group">
+                            <button type="button" class="btn btn-primary">1</button>
+                            <button type="button" class="btn btn-success">2</button>
+                            <button type="button" class="btn btn-danger">3</button>
+                            <button type="button" class="btn btn-primary">4</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
